@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "cvtraining",
+  "info": {
+    "name": "cvtraining",
+    "description": "WOZiTech CV Training Records"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Achieved": {
+      "required": true,
+      "type": "date"
+    },
+    "Expires": {
+      "type": "date"
+    },
+    "Provider": {
+      "enum": [
+        "AWS",
+        "Udemy",
+        "MongoDBUniversity",
+        "Other"
+      ],
+      "type": "enumeration"
+    },
+    "ProviderOther": {
+      "type": "string"
+    }
+  }
+}

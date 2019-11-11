@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cvtrainings",
+      "handler": "Cvtraining.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cvtrainings/count",
+      "handler": "Cvtraining.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cvtrainings/:id",
+      "handler": "Cvtraining.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cvtrainings",
+      "handler": "Cvtraining.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cvtrainings/:id",
+      "handler": "Cvtraining.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cvtrainings/:id",
+      "handler": "Cvtraining.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
