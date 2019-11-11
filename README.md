@@ -39,7 +39,7 @@ docker build -t wozitech/wozitech-cms .
 ```
 
 To run CMS docker image requires a running monogdb (assumed to be cms-db - no port projection to host):
-``
+```
 docker run -d --name cms-db mongo:latest
 docker run -e "DATABASE_HOST=cms-db" -p 8080:1337 --link cms-db --name cms -d wozitech/wozitech-cms
 ```
