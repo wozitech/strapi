@@ -1,0 +1,13 @@
+version: "2"
+services:
+  cms:
+    image: wozitech/wozitech-cms
+    environment:
+      - DATABASE_HOST=cms-db
+    ports:
+    - "8080:1337"
+    depends_on:
+    - cms-db
+  cms-db:
+    image: mongo:latest
+
