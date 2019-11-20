@@ -33,7 +33,7 @@ EXPOSE 1337
 #  or provide a local "env_file" and use docker run with -e"
 ENV DATABASE_HOST cms-db
 ENV DATABASE_NAME cms
-env DATABASE_PORT 27017
+ENV DATABASE_PORT 27017
 ENV DATABASE_SRV false
 ENV DATABASE_SSL false
 ENV DATABASE_USERNAME ''
