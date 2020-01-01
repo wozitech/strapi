@@ -1,4 +1,7 @@
-FROM node:10
+FROM node:12.14.0-alpine3.11
+
+# git is required for the custom install, and build-essentials (c compiler, make, et al), plus autreconf/image libraries
+RUN apk update && apk upgrade && apk add --no-cache bash git alpine-sdk autoconf automake libtool zlib libjpeg-turbo-dev libpng-dev nasm
 
 # Create app directory
 WORKDIR /usr/src/app
